@@ -1,7 +1,9 @@
+'use client';
+
 import React from "react";
 import { SearchIconSet } from "./search-iconset";
 import { IconsManifest } from "react-icons/lib";
-import { IconDetailModal } from "../../../components/icondetailmodal";
+import { IconDetailModal } from "@/components/icondetailmodal";
 import { useSearch } from "../../utils/usesearch";
 
 export function SearchPageComponent() {

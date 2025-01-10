@@ -14,6 +14,7 @@ import { Button } from "@/registry/new-york/ui/button"
 import { IconList } from "@/components/icons-loader"
 import { IconSetViewer } from "@/components/iconset-viewer"
 import { SearchInput } from "@/components/search-icons-input"
+import { SearchPageComponent } from "@/components/search"
 
 export default function IndexPage() {
   return (
@@ -23,6 +24,7 @@ export default function IndexPage() {
         <IconList />
         <IconSetViewer iconSet={"ai"} />
         <SearchInput />
+        <SearchPageComponent />
         <PageHeaderHeading>Build your component library</PageHeaderHeading>
         <PageHeaderDescription>
           Beautifully designed components that you can copy and paste into your
