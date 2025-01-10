@@ -11,7 +11,7 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { Button } from "@/registry/new-york/ui/button"
-import { IconList } from "@/src/components/iconlist"
+import { IconList } from "@/components/icons-loader"
 
 export default function IndexPage() {
   return (
@@ -42,7 +42,7 @@ export default function IndexPage() {
       </div>
       <div className="container-wrapper">
         <div className="container py-6">
-          <section className="overflow-hidden rounded-lg border bg-background shadow-md md:hidden md:shadow-xl">
+          <section className="bg-background overflow-hidden rounded-lg border shadow-md md:hidden md:shadow-xl">
             <Image
               src="/examples/cards-light.png"
               width={1280}
