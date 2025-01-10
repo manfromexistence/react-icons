@@ -1,5 +1,7 @@
+'use client';
+
 import React from "react";
-import { getIcons } from "virtual:react-icons-get-icons";
+import { getIcons } from "@/hooks/use-icons";
 import Icon from "./icon";
 import { IconDetailModal } from "./icondetailmodal";
 

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { FaRegClipboard } from "react-icons/fa6";
 import copy from "copy-to-clipboard";
 import toast from "cogo-toast";
-import { useKeyDown } from "../utils/usekeydown";
+import { useKeyDown } from "@/utils/usekeydown";
 
 interface colorVariant {
   bg: string;
@@ -65,7 +65,6 @@ export function IconDetailModal(
   const importCode = `import { ${props.iconName} } from "react-icons/${props.iconSet}";`;
   const useCode = `<${props.iconName} />`;
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Component = props.component as React.ComponentType<any>;
   const [selectedColor, setSelectedColor] = React.useState<number>(0);
   const colorVariant = colorVariants[selectedColor];
@@ -156,13 +155,13 @@ const useModalAnimation = ({ onClose, isOpen }: useModalAnimationProps) => {
 
   useEffect(() => {
     const modalElement = modalRef.current;
-  
+
     const handleTransitionEnd = () => {
       if (!animationIsOpen) {
         onClose?.();
       }
     };
-  
+
     if (modalElement) {
       modalElement.addEventListener('transitionend', handleTransitionEnd);
     }
