@@ -27,7 +27,7 @@
     "cogo-toast": "^4.2.3",
     "copy-to-clipboard": "^3.3.3",
     "nanostores": "^0.10.3",
-    "react-icons": "^5.4.1-snapshot.0",
+    "react-icons": "packages/react-icons/package.json",
     "sass": "^1.69.5",
     "tiny-skeleton-loader-react": "^1.2.1",
     "typescript": "^5.4.5",
