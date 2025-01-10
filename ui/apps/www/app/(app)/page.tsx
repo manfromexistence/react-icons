@@ -11,12 +11,14 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { Button } from "@/registry/new-york/ui/button"
+import { IconList } from "@/src/components/iconlist"
 
 export default function IndexPage() {
   return (
     <>
       <PageHeader>
         <Announcement />
+        <IconList />
         <PageHeaderHeading>Build your component library</PageHeaderHeading>
         <PageHeaderDescription>
           Beautifully designed components that you can copy and paste into your
