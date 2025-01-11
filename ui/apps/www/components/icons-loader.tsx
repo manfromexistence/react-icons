@@ -64,7 +64,7 @@ export function IconList(): React.ReactElement {
   }
 
   return (
-    <div className="include-icon-sets">
+    <div className="h-32 w-32 rounded-md bg-red-500">
       <div className="content">
         {iconSets.map(({ manifest, count, samples }) => (
           <a
