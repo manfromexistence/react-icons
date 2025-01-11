@@ -28,9 +28,9 @@ export function IconSetViewer(props: IconSetViewerProps) {
         component={selected ? icons?.[selected] : undefined}
         onClose={() => setSelected(null)}
       /> */}
-      <h2>Icons...</h2>
+      {/* <h2>Icons...</h2> */}
       {icons && (
-        <div className="grid grid-cols-5 place-items-center gap-8 p-4">
+        <div className="grid grid-cols-5 place-items-stretch gap-8 p-4">
           {Object.keys(icons).map((name) => {
             const Component = icons[name];
             if (!Component) {

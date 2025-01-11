@@ -158,3 +158,8 @@
     @apply max-w-[1536px];
   }
 }
+
+.icon svg{
+  height: 35px;
+  width: 35px;
+}
