@@ -42,8 +42,8 @@ export default function Icon(props: IconProps) {
   };
 
   return (
-    <div className="item" tabIndex={0} onClick={copyToClipboard}>
-      <div className="icon h2">
+    <div className="h-[150px] w-[200px] rounded-md border " tabIndex={0} onClick={copyToClipboard}>
+      <div className="">
         <Component />
       </div>
       <div className="name">
