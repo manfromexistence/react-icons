@@ -1,5 +1,4 @@
 import "@/styles/globals.css"
-import "@/styles/global.scss"
 import { Metadata, Viewport } from "next"
 
 import { META_THEME_COLORS, siteConfig } from "@/config/site"

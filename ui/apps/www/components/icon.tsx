@@ -2,6 +2,13 @@ import React from "react";
 import toast from "cogo-toast";
 import copy from "copy-to-clipboard";
 import { Copy, Download } from "lucide-react";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/registry/new-york/ui/hover-card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/registry/new-york/ui/tooltip"
 
 export interface IconProps {
   component: React.ComponentType;
@@ -43,10 +50,26 @@ export default function Icon(props: IconProps) {
   };
 
   return (
-    <div className="flex h-[150px] flex-col items-center justify-center rounded-md border" tabIndex={0} onClick={copyToClipboard}>
+    <div className="hover:bg-primary-foreground flex flex-col items-center justify-center rounded-md border p-2">
       <div className="icon flex h-full w-full flex-col items-center justify-center gap-2">
-        <Component />
-        <span className="text-sm font-medium">{props.iconName}</span>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Component />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>{props.iconName}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+        {/* <HoverCard>
+          <HoverCardTrigger asChild>
+          </HoverCardTrigger>
+          <HoverCardContent className="w-80">
+            {props.iconName}
+          </HoverCardContent>
+        </HoverCard> */}
+        {/* <span className="text-sm font-medium">{props.iconName}</span> */}
       </div>
       {/* <div className="flex w-full space-x-2">
         <Copy className="h-5 w-5" />
@@ -61,3 +84,4 @@ export default function Icon(props: IconProps) {
     </div>
   );
 }
+

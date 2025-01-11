@@ -30,7 +30,7 @@ export function IconSetViewer(props: IconSetViewerProps) {
       /> */}
       {/* <h2>Icons...</h2> */}
       {icons && (
-        <div className="grid grid-cols-5 place-items-stretch gap-8 p-4">
+        <div className="grid-cols-icons mb-24 grid place-items-stretch gap-2 p-4">
           {Object.keys(icons).map((name) => {
             const Component = icons[name];
             if (!Component) {
